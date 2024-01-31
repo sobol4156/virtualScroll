@@ -16,7 +16,7 @@ export const PostItem: FC<{ post: Post }> = ({ post }) => {
 
     const dispatch = useDispatch();
 
-    const handlePostClick = (post) => {
+    const handlePostClick = (post:Post) => {
         dispatch(setSelectedPost(post));
     };
 

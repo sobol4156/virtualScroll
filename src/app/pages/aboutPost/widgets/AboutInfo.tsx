@@ -3,13 +3,15 @@ import './About.scss'
 import { Link } from "react-router-dom";
 
 interface SelectedPost {
+  [x: string]: any;
   id: number;
   title: string;
   body: string;
 }
 
+
 const AboutInfo = () => {
-  const selected: SelectedPost = useSelector(state => state.selectedPost.value);
+  const selected = useSelector((state: SelectedPost) => state.selectedPost.value);
   console.log(selected)
   return (
     <div>
