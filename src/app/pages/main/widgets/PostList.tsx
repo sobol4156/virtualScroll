@@ -18,7 +18,7 @@ export const PostList = () => {
     const [isMyFetching, setIsFetchingDown] = useState(false)
     const [isMyFetchingUp, setIsMyFetchingUp] = useState(false)
 
-    
+    // 
 
 
     useEffect(() => {
