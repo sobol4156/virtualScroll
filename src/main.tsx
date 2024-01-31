@@ -9,7 +9,7 @@ const store = setupStore()
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
     <Provider store={store}>
-        <BrowserRouter>
+        <BrowserRouter basename='/virtualScroll/'>
             <App />
         </BrowserRouter>
     </Provider>

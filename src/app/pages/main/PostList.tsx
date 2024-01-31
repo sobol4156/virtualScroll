@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react"
-import { postApi } from "../../../shared/redux/api"
-import { PostItem } from "./function/PostItem";
+import { postApi } from "../../shared/redux/api"
+import { PostItem } from "./widgets/function/PostItem";
 import './PostList.scss'
 
 
@@ -59,15 +59,15 @@ export const PostList = () => {
     }
 
 
-    
-        
-      
+
+
+
 
 
     return (
         <div>
             <div className='postList'>
-                {posts?.map((post: Post) => <PostItem key={post.id} post={post}  />)}
+                {posts?.map((post: Post) => <PostItem key={post.id} post={post} />)}
             </div>
         </div>
     );
