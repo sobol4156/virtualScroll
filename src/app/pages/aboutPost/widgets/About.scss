@@ -1,0 +1,30 @@
+
+.infoPost {
+    margin: 20px 150px;
+    font-size: 25px;
+    margin-top: -200px;
+
+
+
+
+    .infoTitle {
+        margin-top: 30px;
+        margin-bottom: 130px;
+        font-size: 30px;
+        font-weight: 800;
+    }
+  }
+
+  .back{
+        border-radius: 10px;
+        color: white;
+        transition: .2s linear;
+        background: #d8b907;
+  }
+  .back:hover {
+    box-shadow: 0 0 0 2px white, 0 0 0 4px #d8b907;
+}
+.IdAndBtn{
+    display: flex;
+    justify-content: space-between;
+}

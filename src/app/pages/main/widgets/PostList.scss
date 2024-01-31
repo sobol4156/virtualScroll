@@ -1,0 +1,116 @@
+body {
+  display: flex;
+  justify-content: center;
+  background: #39383f;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+
+.post {
+  align-items: start;
+  padding: 15px;
+  margin: 35px 0px;
+  color: #f5e2cd;
+  font-size: 14px;
+  background: #413d4c;
+  width: 700px;
+  height: auto;
+  
+  .title {
+    font-weight: 500;
+    margin-bottom: 15px;
+    transition-delay: 0.05s;
+    font-size: 23px;
+
+    text-transform: uppercase;
+  }
+  .title::before {
+    content: "";
+    font-family: FontAwesome;
+    color: #f09ea3;
+    font-size: 50px;
+    line-height: 1;
+  }
+
+  .animationTitle {
+    transition: 0.3s all ease-in-out;
+  }
+  .animationId {
+    transition: 0.3s all ease-in-out;
+  }
+  .animationBody {
+    transition: 0.3s all ease-in-out;
+  }
+  .body::first-letter {
+    text-transform: uppercase;
+    transition: 0.3s all ease-in-out;
+  }
+}
+
+.post:hover .animationTitle {
+  transform: translateY(-6px);
+}
+
+.post:hover .animationBody {
+  transform: translateY(-10px);
+}
+
+.post:hover .animationId {
+  transform: translateY(-6px);
+}
+
+.item-footer {
+  padding-top: 15px;
+}
+.link {
+  text-decoration: none;
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  padding-right: 30px;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #f5e2cd;
+  text-decoration: none;
+}
+.link:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  bottom: 0;
+  height: 0.125rem;
+  margin: auto;
+  background: #f09ea3;
+  transform: scaleX(0.2);
+  transform-origin: left center;
+  z-index: 0;
+  transition: 0.6s cubic-bezier(0.6, 0.01, 0, 1);
+}
+.link span {
+  display: inline-block;
+  position: relative;
+  transform: translateX(-200%);
+  transition: 0.6s cubic-bezier(0.6, 0.01, 0, 1);
+  color: #f5e2cd;
+}
+.post:hover .link span {
+  transform: translateX(0%);
+}
+
+.post:hover .link:before {
+  transform-origin: right center;
+}
+@media (min-width: 768px) {
+  .post {
+    flex-basis: 50%;
+    flex-shrink: 0;
+  }
+}
+@media (min-width: 960px) {
+  .post {
+    flex-basis: 33.333333333%;
+  }
+}
